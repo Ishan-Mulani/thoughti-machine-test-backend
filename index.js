@@ -1,7 +1,9 @@
 const express = require("express");
 const app = express();
 const winston = require("winston");
+const cors = require("cors");
 
+app.use(cors());
 // Loging errors
 require("./startup/logging");
 // middlewares
